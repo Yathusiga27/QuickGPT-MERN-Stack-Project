@@ -1,16 +1,57 @@
-# React + Vite
+# QuickGPT Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend for the QuickGPT AI assistant app, built with React, Vite, React Router, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Current Progress
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The client currently includes:
 
-## React Compiler
+- Chat layout with sidebar navigation and a main chat panel
+- Conversation search in the sidebar
+- Recent chats list powered by local dummy data
+- Community Images page with published image cards
+- Credit Plans page with pricing cards and aligned purchase buttons
+- Dark mode toggle with theme persistence in `localStorage`
+- Mobile sidebar open and close behavior
+- Loading screen route
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Current Routes
 
-## Expanding the ESLint configuration
+- `/` - main chat screen
+- `/community` - community image gallery
+- `/credits` - credit plans page
+- `/loading` - loading screen
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Current Data State
+
+This frontend is still using placeholder data from local assets and context:
+
+- user data is mocked
+- chat history is mocked
+- credit plans are mocked
+- community images are mocked
+
+The chat submit flow and backend API integration are not connected yet.
+
+## Tech Stack
+
+- React 19
+- Vite
+- React Router
+- Tailwind CSS 4
+- Moment.js
+- Prism.js
+- React Markdown
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Notes
+
+- Theme preference is saved in the browser.
+- The current focus is frontend structure and UI progress.
+- The next major step is wiring the UI to real authentication, chat, image generation, and payment flows.
